@@ -213,6 +213,7 @@ figure {
       bottom: 0px;
       top: 0px;
       width: 10%;
+      text-align: center
   }
 
   main {
@@ -224,7 +225,11 @@ figure {
       display: block;
   }
 
-  .site-footer {background-color: #333333;color: #ffffff;overflow: hidden;clear: both;}
+  .site-footer {
+    background-color: #333333;
+    color: #ffffff;
+    overflow: hidden;
+    clear: both;}
 
   nav.footer-nav {
       float: left;
@@ -257,6 +262,42 @@ figure {
 
   footer.site-footer {
      float: right;
-     width: 90%; 
+     width: 90%;
   }
+}
+
+@media (min-width: 992px) {
+  main > article:first-child{
+    width: 100%;
+  }
+  main > article:first-child .movie-image .movie-poster{
+    display: none;
+  }
+  main > article:first-child .movie-image .movie-backdrop{
+    display: block;
+  }
+  main > .movie:first-child .movie-details .movie-overview{
+    display: inline;
+  }
+  .movie-details{
+    padding-bottom: 0px;
+  }
+  .movie-backdrop{
+    display: none;
+  }
+  .movie-details .movie-overview{
+    display: none;
+  }
+  .movie-poster{
+    display: inline-block;
+    width: 100%;
+
+  }
+  .movie {
+    float: left;
+    overflow: hidden;
+    width: 33%;
+}
+
+
 }
